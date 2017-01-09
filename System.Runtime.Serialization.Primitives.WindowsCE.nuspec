@@ -3,7 +3,7 @@
   <metadata>
     <id>System.Runtime.Serialization.Primitives.WindowsCE</id>
     <version>$version$</version>
-    <title>System.Runtime.Serialization.Primitives</title>
+    <title>System.Runtime.Serialization.Primitives.WindowsCE</title>
     <authors>Microsoft,Fabricio Godoy</authors>
     <owners>skarllot,fgodoy-verion</owners>
     <licenseUrl>https://www.microsoft.com/net/dotnet_library_license.htm</licenseUrl>
