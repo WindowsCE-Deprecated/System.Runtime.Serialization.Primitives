@@ -7,6 +7,9 @@
       "rootNamespace": "System.Runtime.Serialization",
       "assemblyName": "System.Runtime.Serialization.Primitives",
       "basePath": "System.Runtime.Serialization.Primitives.WindowsCE",
+      "features": [
+        "CLASSIC"
+      ],
       "frameworkAssemblies": [
         "mscorlib",
         "System",

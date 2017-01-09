@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>System.Runtime.Serialization.Primitives.WindowsCE</id>
+    <version>$version$</version>
+    <title>System.Runtime.Serialization.Primitives</title>
+    <authors>Microsoft,Fabricio Godoy</authors>
+    <owners>skarllot,fgodoy-verion</owners>
+    <licenseUrl>https://www.microsoft.com/net/dotnet_library_license.htm</licenseUrl>
+    <projectUrl>https://github.com/WindowsCE/System.Runtime.Serialization.Primitives</projectUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <summary>Provides common types, including System.Runtime.Serialization.DataContractAttribute, for libraries that support data contract serialization</summary>
+    <description>Provides common types, including System.Runtime.Serialization.DataContractAttribute, for libraries that support data contract serialization.
+
+Commonly Used Types:
+System.Runtime.Serialization.StreamingContext
+System.Runtime.Serialization.OnDeserializingAttribute
+System.Runtime.Serialization.OnDeserializedAttribute
+System.Runtime.Serialization.OnSerializingAttribute
+System.Runtime.Serialization.OnSerializedAttribute
+System.Runtime.Serialization.EnumMemberAttribute
+System.Runtime.Serialization.DataMemberAttribute
+System.Runtime.Serialization.DataContractAttribute
+System.Runtime.Serialization.IgnoreDataMemberAttribute
+System.Runtime.Serialization.SerializationException
+ 
+When using NuGet 3.x this package requires at least version 3.4.</description>
+    <language>en-US</language>
+    <tags>serialization,net35-cf,windowsce,wince</tags>
+    <dependencies>
+      <group targetFramework=".NETFramework3.5-CompactFramework" />
+    </dependencies>
+  </metadata>
+</package>

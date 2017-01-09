@@ -9,3 +9,8 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("System.Runtime.Serialization.Primitives")]
 [assembly: AssemblyTrademark("")]
+
+#if CLASSIC
+[assembly: AssemblyVersion("1.0.0.0")]
+[assembly: AssemblyInformationalVersion("1.0.0")]
+#endif
