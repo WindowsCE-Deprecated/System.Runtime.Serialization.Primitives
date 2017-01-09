@@ -1,0 +1,25 @@
+﻿{
+  "title": "Provides common types, including System.Runtime.Serialization.DataContractAttribute, for libraries that support data contract serialization",
+  "version": "1.0.0-*",
+  "language": "en-US",
+  "authors": [ "Microsoft", "Fabricio Godoy" ],
+  "packOptions": {
+    "owners": [ "skarllot", "fgodoy-verion" ],
+    "tags": [ "serialization", "net35-cf", "windowsce", "wince" ],
+    "projectUrl": "https://github.com/WindowsCE/System.Runtime.Serialization.Primitives",
+    "licenseUrl": "https://www.microsoft.com/net/dotnet_library_license.htm",
+    "requireLicenseAcceptance": true,
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/WindowsCE/System.Runtime.Serialization.Primitives.git"
+    }
+  },
+
+  "buildOptions": {
+    "outputName": "System.Runtime.Serialization.Primitives"
+  },
+
+  "frameworks": {
+    "net35-cf": {}
+  }
+}

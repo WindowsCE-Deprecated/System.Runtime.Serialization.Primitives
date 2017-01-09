@@ -1,0 +1,17 @@
+{
+  "name": "Serialization.Primitives",
+  "projects": [
+    {
+      "name": "System.Runtime.Serialization.Primitives",
+      "guid": "{D6B3B54F-528E-4A18-8F83-1B9D6B09F1FF}",
+      "rootNamespace": "System.Runtime.Serialization",
+      "assemblyName": "System.Runtime.Serialization.Primitives",
+      "basePath": "System.Runtime.Serialization.Primitives.WindowsCE",
+      "frameworkAssemblies": [
+        "mscorlib",
+        "System",
+        "System.Core"
+      ]
+    }
+  ]
+}

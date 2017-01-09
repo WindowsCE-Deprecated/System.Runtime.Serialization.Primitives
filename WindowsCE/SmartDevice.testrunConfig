@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestRunConfiguration name="Local SmartDevices" id="6ca4f1c4-6989-4b94-afcb-35ffe50b28b8" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2006">
+  <Description>This is a default test run configuration for a local SmartDevice test run.</Description>
+  <Hosts type="Smart Device">
+    <DeviceHostRunConfigData name="Smart Device" deviceId="E282E6BE-C7C3-4ece-916A-88FB1CF8AF3C" deviceName="Pocket PC 2003 SE Emulator" platformId="3C41C503-53EF-4c2a-8DD4-A8217CAD115E" platformName="Pocket PC 2003" uiPlatformId="E2BECB1F-8C8C-41ba-B736-9BE7D946A398" />
+  </Hosts>
+  <TestTypeSpecific />
+</TestRunConfiguration>

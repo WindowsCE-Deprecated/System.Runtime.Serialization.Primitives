@@ -1,0 +1,121 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D6B3B54F-528E-4A18-8F83-1B9D6B09F1FF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>System.Runtime.Serialization</RootNamespace>
+    <AssemblyName>System.Runtime.Serialization.Primitives</AssemblyName>
+    <ProjectTypeGuids>{4D628B5B-2FBC-4AA6-8C16-197242AEB884};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <PlatformFamilyName>WindowsCE</PlatformFamilyName>
+    <PlatformID>E2BECB1F-8C8C-41ba-B736-9BE7D946A398</PlatformID>
+    <OSVersion>5.0</OSVersion>
+    <DeployDirSuffix>System.Runtime.Serialization.Primitives</DeployDirSuffix>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <NativePlatformName>Windows CE</NativePlatformName>
+    <FormFactorID>
+    </FormFactorID>
+    <OutputPath>bin\$(Configuration)\</OutputPath>
+    <DocumentationFile>bin\$(Configuration)\$(AssemblyName).XML</DocumentationFile>
+    <Features></Features>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineConstants>TRACE;DEBUG;$(PlatformFamilyName);$(Features)</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <FileAlignment>512</FileAlignment>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineConstants>TRACE;$(PlatformFamilyName);$(Features)</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <FileAlignment>512</FileAlignment>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\System.Runtime.Serialization.Primitives.WindowsCE\CollectionDataContractAttribute.cs">
+      <Link>CollectionDataContractAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\System.Runtime.Serialization.Primitives.WindowsCE\ContractNamespaceAttribute.cs">
+      <Link>ContractNamespaceAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\System.Runtime.Serialization.Primitives.WindowsCE\DataContractAttribute.cs">
+      <Link>DataContractAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\System.Runtime.Serialization.Primitives.WindowsCE\DataMemberAttribute.cs">
+      <Link>DataMemberAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\System.Runtime.Serialization.Primitives.WindowsCE\EnumMemberAttribute.cs">
+      <Link>EnumMemberAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\System.Runtime.Serialization.Primitives.WindowsCE\IgnoreDataMemberAttribute.cs">
+      <Link>IgnoreDataMemberAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\System.Runtime.Serialization.Primitives.WindowsCE\InvalidDataContractException.cs">
+      <Link>InvalidDataContractException.cs</Link>
+    </Compile>
+    <Compile Include="..\..\System.Runtime.Serialization.Primitives.WindowsCE\ISerializationSurrogateProvider.cs">
+      <Link>ISerializationSurrogateProvider.cs</Link>
+    </Compile>
+    <Compile Include="..\..\System.Runtime.Serialization.Primitives.WindowsCE\KnownTypeAttribute.cs">
+      <Link>KnownTypeAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\System.Runtime.Serialization.Primitives.WindowsCE\Mock.cs">
+      <Link>Mock.cs</Link>
+    </Compile>
+    <Compile Include="..\..\System.Runtime.Serialization.Primitives.WindowsCE\OnDeserializedAttribute.cs">
+      <Link>OnDeserializedAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\System.Runtime.Serialization.Primitives.WindowsCE\OnDeserializingAttribute.cs">
+      <Link>OnDeserializingAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\System.Runtime.Serialization.Primitives.WindowsCE\OnSerializedAttribute.cs">
+      <Link>OnSerializedAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\System.Runtime.Serialization.Primitives.WindowsCE\OnSerializingAttribute.cs">
+      <Link>OnSerializingAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\System.Runtime.Serialization.Primitives.WindowsCE\Properties\AssemblyInfo.cs">
+      <Link>Properties\AssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\..\System.Runtime.Serialization.Primitives.WindowsCE\StreamingContext.cs">
+      <Link>StreamingContext.cs</Link>
+    </Compile>
+    <Compile Include="..\..\System.Runtime.Serialization.Primitives.WindowsCE\StreamingContextStates.cs">
+      <Link>StreamingContextStates.cs</Link>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(SolutionDir)Microsoft.CompactFramework.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}">
+        <HostingProcess disable="1" />
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
