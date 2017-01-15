@@ -49,8 +49,9 @@ namespace System.Runtime.Serialization
         /// </param>
         /// <param name="additional">
         /// Any additional information to be associated with the <see cref="StreamingContext"/>.
-        /// This information is available to any object that implements <see cref="ISerializable"/>
-        /// or any serialization surrogate.
+        /// This information is available to any object that implements
+        /// <see cref="T:System.Runtime.Serialization.ISerializable"/> or any
+        /// serialization surrogate.
         /// Most users do not need to set this parameter.
         /// </param>
         public StreamingContext(StreamingContextStates state, object additional)

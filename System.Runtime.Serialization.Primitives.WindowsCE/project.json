@@ -1,6 +1,6 @@
 ﻿{
   "title": "System.Runtime.Serialization.Primitives.WindowsCE",
-  "version": "1.0.0-*",
+  "version": "1.0.1-*",
   "language": "en-US",
   "authors": [ "Microsoft", "Fabricio Godoy" ],
   "packOptions": {
@@ -17,7 +17,11 @@
   },
 
   "buildOptions": {
-    "outputName": "System.Runtime.Serialization.Primitives"
+    "keyFile": "../tools/keypair.snk",
+    "nowarn": [ "CS1591" ],
+    "outputName": "System.Runtime.Serialization.Primitives",
+    "xmlDoc": true,
+    "warningsAsErrors": true
   },
 
   "frameworks": {

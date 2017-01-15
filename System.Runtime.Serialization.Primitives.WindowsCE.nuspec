@@ -3,12 +3,13 @@
   <metadata>
     <id>System.Runtime.Serialization.Primitives.WindowsCE</id>
     <version>$version$</version>
-    <title>System.Runtime.Serialization.Primitives.WindowsCE</title>
-    <authors>Microsoft,Fabricio Godoy</authors>
+    <title>System.Runtime.Serialization.Primitives for WindowsCE</title>
+    <authors>Fabricio Godoy</authors>
     <owners>skarllot,fgodoy-verion</owners>
-    <licenseUrl>https://www.microsoft.com/net/dotnet_library_license.htm</licenseUrl>
+    <licenseUrl>https://github.com/WindowsCE/System.Runtime.Serialization.Primitives/blob/master/LICENSE.txt</licenseUrl>
     <projectUrl>https://github.com/WindowsCE/System.Runtime.Serialization.Primitives</projectUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <copyright>Copyright © Fabrício Godoy</copyright>
     <summary>Provides common types, including System.Runtime.Serialization.DataContractAttribute, for libraries that support data contract serialization</summary>
     <description>Provides common types, including System.Runtime.Serialization.DataContractAttribute, for libraries that support data contract serialization.
 
@@ -24,9 +25,9 @@ System.Runtime.Serialization.DataContractAttribute
 System.Runtime.Serialization.IgnoreDataMemberAttribute
 System.Runtime.Serialization.SerializationException
  
-When using NuGet 3.x this package requires at least version 3.4.</description>
+Mimics the package System.Runtime.Serialization.Primitives.</description>
     <language>en-US</language>
-    <tags>serialization,net35-cf,windowsce,wince</tags>
+    <tags>serialization,net35-cf,windowsce,wince,contract</tags>
     <dependencies>
       <group targetFramework=".NETFramework3.5-CompactFramework" />
     </dependencies>
