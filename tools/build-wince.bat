@@ -10,11 +10,19 @@ set net35path="C:\Windows\Microsoft.NET\Framework\v3.5"
 set msbuild35="%net35path%\MSBuild.exe"
 set targetscf="%net35path%\Microsoft.CompactFramework.CSharp.targets"
 
-set msbuild="C:\Program Files (x86)\MSBuild\14.0\bin\msbuild"
+set msbuild="%ProgramFiles(x86)%\MSBuild\14.0\bin\msbuild"
 if not exist %msbuild% (
-    set msbuild="C:\Program Files (x86)\MSBuild\12.0\bin\msbuild"
+    set msbuild="%ProgramFiles%\MSBuild\14.0\bin\msbuild"
 )
 if not exist %msbuild% (
+    echo Falling back to MSBuild 12.0
+    set msbuild="%ProgramFiles(x86)%\MSBuild\12.0\bin\msbuild"
+)
+if not exist %msbuild% (
+    set msbuild=%ProgramFiles%\MSBuild\12.0\bin\msbuild"
+)
+if not exist %msbuild% (
+    echo Falling back to .NET Framework 3.5 MSBuild
     set msbuild=%msbuild35%
 )
 

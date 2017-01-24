@@ -16,6 +16,15 @@ if not exist %AssemblyDir%\%AssemblyFile% (
     set AssemblyDir=%output%\net46
 )
 if not exist %AssemblyDir%\%AssemblyFile% (
+    set AssemblyDir=%output%\net45
+)
+if not exist %AssemblyDir%\%AssemblyFile% (
+    set AssemblyDir=%output%\net40
+)
+if not exist %AssemblyDir%\%AssemblyFile% (
+    set AssemblyDir=%output%\net35
+)
+if not exist %AssemblyDir%\%AssemblyFile% (
     set AssemblyDir=%output%\net35-cf
 )
 if not exist %AssemblyDir%\%AssemblyFile% (

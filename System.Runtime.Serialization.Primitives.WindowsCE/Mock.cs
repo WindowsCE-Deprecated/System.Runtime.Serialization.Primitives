@@ -1,8 +1,5 @@
-﻿namespace System.Reflection
+﻿[System.AttributeUsage(System.AttributeTargets.Assembly, AllowMultiple = false)]
+internal sealed class AssemblyFileVersionAttribute : System.Attribute
 {
-    [AttributeUsage(AttributeTargets.Assembly, AllowMultiple = false)]
-    internal sealed class AssemblyFileVersionAttribute : Attribute
-    {
-        public AssemblyFileVersionAttribute(string version) { }
-    }
+    public AssemblyFileVersionAttribute(string version) { }
 }

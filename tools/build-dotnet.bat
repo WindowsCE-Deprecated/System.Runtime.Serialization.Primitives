@@ -38,6 +38,16 @@ if "%Framework%" == "net35-client" (
 	GOTO SetupEnd
 )
 
+if "%Framework%" == "net35-cf" (
+	set TargetDir=%Framework%
+	GOTO SetupEnd
+)
+
+if "%Framework%" == "sl4" (
+	set TargetDir=%Framework%
+	GOTO SetupEnd
+)
+
 if "%Framework%" == "net40" (
 	set TargetDir=%Framework%
 	GOTO SetupEnd
@@ -164,7 +174,7 @@ rmdir /s/q "%OutputPath%" 2> nul
 rmdir /s/q "%ObjOutputPath%" 2> nul
 
 REM Call DotNet to build project
-%dotnet% build %SolutionDir%%Project% -f %Framework% -b %ObjOutputPath% -o %OutputPath%
+%dotnet% build %SolutionDir%%Project% -c Release -f %Framework% -b %ObjOutputPath% -o %OutputPath%
 set DOTNETERROR=%ERRORLEVEL%
 rmdir /s/q "%ObjOutputPath%"
 

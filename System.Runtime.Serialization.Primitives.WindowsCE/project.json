@@ -1,6 +1,6 @@
 ﻿{
   "title": "System.Runtime.Serialization.Primitives.WindowsCE",
-  "version": "1.0.1-*",
+  "version": "1.0.0-*",
   "language": "en-US",
   "authors": [ "Microsoft", "Fabricio Godoy" ],
   "packOptions": {

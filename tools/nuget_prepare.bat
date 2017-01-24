@@ -27,13 +27,23 @@ if %nodoc% == 1 (
 if exist "%output%\%platform%\%assembly%.mdb" (
 	copy "%output%\%platform%\%assembly%.mdb" "%nuget_folder%\lib\%platform%\*.*" > nul || EXIT /B 1
 )
-if exist "%output%\%platform%\pt\%assembly%.*" (
-    mkdir "%nuget_folder%\lib\%platform%\pt" > nul || EXIT /B 1
-	copy "%output%\%platform%\pt\%assembly%.*" "%nuget_folder%\lib\%platform%\pt\*.*" > nul || EXIT /B 1
-)
 
+CALL :CopyResource pt || EXIT /B 1
+CALL :CopyResource pt-BR || EXIT /B 1
+CALL :CopyResource es || EXIT /B 1
+CALL :CopyResource es-ES || EXIT /B 1
 
 set platform=
-set package=
 set assembly=
 EXIT /B %ERRORLEVEL%
+
+:CopyResource
+set lang=%~1
+
+if exist "%output%\%platform%\%lang%\%assembly%.dll" (
+    mkdir "%nuget_folder%\lib\%platform%\%lang%" > nul || EXIT /B 1
+    copy "%output%\%platform%\%lang%\%assembly%.dll" "%nuget_folder%\lib\%platform%\%lang%\" > nul || EXIT /B 1
+)
+
+set lang=
+EXIT /B 0
